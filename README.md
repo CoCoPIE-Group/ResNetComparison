@@ -1,8 +1,8 @@
 # Introduction
 
-This repository includes instructions on how to download and test on CPU the speed and accuracy of the ResNet models optimized by CoCoPIE. The base framework is OpenVINO. 
+This repository includes instructions on how to test on CPU the speed and accuracy of the ResNet models optimized by CoCoPIE. The base framework is OpenVINO. 
 
-*All copyright of the optimized ResNet models (resnet50_78top1, resnet50_76top1, resnet50_75top1) in referenced in this repository belongs to CoCoPIE Inc. No redistribution or commercial use without the written consent by CoCoPIE Inc.*
+*All copyright of the optimized ResNet models (resnet50_78top1, resnet50_76top1, resnet50_75top1) referenced in this repository belongs to CoCoPIE Inc. No distribution or commercial use without the consent in writing by CoCoPIE Inc.*
 
 # Results
 
