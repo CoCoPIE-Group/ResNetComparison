@@ -47,7 +47,7 @@ Codename: focal
 
 0. Download the [ResNet models](https://cocopieai-my.sharepoint.com/:f:/g/personal/xipeng_shen_cocopie_ai/Ep7pcuZ4PGVPnJVWzq_M95IB84CIHP7QdThLKIpYZK8x4g?email=jay.liu%40cocopie.ai&e=90nOPj)
 
-1. Install OpenVINO by referring to the official installation guide: [Installing OpenVINO with pip](https://docs.openvino.ai/2023.1/openvino_docs_install_guides_installing_openvino_pip.html).
+1. Install OpenVINO by referring to the official installation guide: [Installing OpenVINO with pip](https://docs.openvino.ai/2023.1/openvino_docs_install_guides_installing_openvino_pip.html). Install onnx and onnxruntime by commands: `pip install onnx onnxruntime`. 
 
 2. Convert the ONNX models to the OpenVINO format. Run the following command:
    ```
@@ -68,8 +68,9 @@ Codename: focal
    ```
    python inference_onnx.py --onnx-path <path_to_onnx_model> --data <path_to_data>
    ```
+where, <path_to_data> is the root path of the ImageNet dataset. 
 
-   Note: The `inference_onnx.py` script uses the ONNX Runtime (rather than OpenVINO) with CPU support, and the number of threads is set to 12.
+   Note: The `inference_onnx.py` script uses the ONNX Runtime (rather than OpenVINO) with CPU support, and the number of threads is set to 12. 
 
 
 CoCoPIE
