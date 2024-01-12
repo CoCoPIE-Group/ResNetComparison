@@ -20,15 +20,15 @@ Codename: focal
 12th Gen Intel(R) Core(TM) i7-12700K
 ```
 
-**Models**
-
-  Baselines: resnet50-origin, resnet101_origin
-  
-  Optimized by CoCoPIE: resnet50_78top1, resnet50_76top1, resnet50_75top1
-
 **Dataset**
 
 [ImageNet](https://www.image-net.org/download.php)
+
+**Models**
+
+  Baselines: origin-small is the official resnet50 model, origin-large is the official resnet101 model
+  
+  Optimized models by CoCoPIE (three variants with different accuracy-speed tradeoffs): resnet50_78top1, resnet50_76top1, resnet50_75top1
 
 **Speed and Accuracy**
 
@@ -36,11 +36,11 @@ Codename: focal
 
 | Model             | Accuracy   | Median Latency (ms) | Average Latency (ms) | Min Latency (ms) | Max Latency (ms) | FPS    | FLOPs (G)   | Params (M)    |
 |-------------------|------------|---------------------|----------------------|------------------|------------------|--------|-------------|---------------|
-| resnet50-origin   | 76.15%     | 9.57                | 10.29                | 9.22             | 28.45            | 96.26  | 4.11 | 25.55    |
-| resnet101_origin  | 77.37%     | 17.92               | 18.65                | 17.37            | 30.93            | 53.35  | 7.83  | 44.55      |
-| **resnet50_78top1**   | 78.09%     | 8.51                | 8.91                 | 8.18             | 18.25            | 111.17 | 3.38   | 21.81     |
-| **resnet50_76top1**   | 76.24%     | 4.07                | 4.28                 | 3.82             | 12.17            | 228.85 | 1.41  | 11.14     |
-| **resnet50_75top1**   | 75.17%     | 3.53                | 3.71                 | 3.26             | 10.87            | 263.25 | 1.21 | 9.10      |
+| origin-small (resnet50)   | 76.15%     | 9.57                | 10.29                | 9.22             | 28.45            | 96.26  | 4.11 | 25.55    |
+| origin-large (resnet101)  | 77.37%     | 17.92               | 18.65                | 17.37            | 30.93            | 53.35  | 7.83  | 44.55      |
+| **optimized (resnet50_78top1)**   | 78.09%     | 8.51                | 8.91                 | 8.18             | 18.25            | 111.17 | 3.38   | 21.81     |
+| **optimized (resnet50_76top1)**   | 76.24%     | 4.07                | 4.28                 | 3.82             | 12.17            | 228.85 | 1.41  | 11.14     |
+| **optimized (resnet50_75top1)**   | 75.17%     | 3.53                | 3.71                 | 3.26             | 10.87            | 263.25 | 1.21 | 9.10      |
 
 
 ## Instructions for Reproducing the Results
